@@ -11,7 +11,6 @@
     "react-circular-progressbar": "^2.0.4",
     "react-dom": "^17.0.2",
     "react-scripts": "^1.1.5",
-    "react-slick": "^0.28.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

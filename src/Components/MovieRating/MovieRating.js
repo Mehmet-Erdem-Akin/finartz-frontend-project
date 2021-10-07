@@ -1,5 +1,5 @@
 import React from "react";
-import { CircularProgressbar,CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
+import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 export default function MovieRating() {
@@ -16,7 +16,6 @@ export default function MovieRating() {
           textSize: "2em",
           
           // Colors
-          pathColor: '#ffffff',
           textColor: "#ffffff",
           trailColor: "#204529",
           pathColor: "#21d07a",
@@ -24,7 +23,7 @@ export default function MovieRating() {
       >
          <div style={{ fontSize: '14px', color: '#fff',marginLeft: '-5px' }}>
           <strong>67</strong> 
-          <span style={{fontSize: '8px',top: '12px', position: 'absolute'}}>%</span>
+          <span style={{fontSize: '6px',top: '12px', position: 'absolute',color: '#ccc'}}>%</span>
         </div> 
       </CircularProgressbarWithChildren>
     </div>

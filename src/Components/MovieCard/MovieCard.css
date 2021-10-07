@@ -10,6 +10,10 @@
     font-weight: bold;
 }
 
+.image:hover {
+    cursor: pointer;
+}
+
 .card-body {
     margin: -15px 10px 12px 10px;
 
@@ -26,9 +30,14 @@ h2 > a {
     text-decoration: none;
 }
 
+h2 > a:hover {
+    color: #09BDD3;
+}
+
 p {
     font-size: 0.8em;
     margin: 0;
     padding: 0;
     color: rgba(0,0,0,0.6);
 }
+
