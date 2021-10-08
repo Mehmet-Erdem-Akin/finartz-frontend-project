@@ -1,0 +1,42 @@
+.bar {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    color: white;
+    font-size: 13px;
+    height: 28px;
+    margin: 0px 20px;
+}
+
+.filter-title {
+    font-size: 22px;
+}
+
+.filter {
+    padding: 4px 20px;
+    border-radius: 15px;
+}
+.selected {
+    
+    background-color: #032541;
+}
+
+.filter-text{
+    color: #032541;
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+.selected > .filter-text {
+
+    background: linear-gradient(to right, #c0fecf 0%, #1ed5a9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.FilterBar {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}

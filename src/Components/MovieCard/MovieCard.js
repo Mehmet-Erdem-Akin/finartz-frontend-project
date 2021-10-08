@@ -2,11 +2,11 @@ import React from 'react';
 import './MovieCard.css';
 import MovieRating from '../MovieRating/MovieRating';
 
-export default function MovieCard() {
+export default function MovieCard(props) {
     return (
         <div>
             <div className="card-header">
-                <img className="image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/5UDe6oVAIv6PC7eJ046o6oCyQc3.jpg"
+                <img className="image" src={props.img}
                  alt="" 
                  srcset=""
                  style={{
@@ -21,17 +21,19 @@ export default function MovieCard() {
                      
                  </img>
                 <div className="movie-rating">
-                    <MovieRating/>
+                    <MovieRating
+                        rating={props.rating}
+                    />
                 </div>
             </div>
             <div className="card-body">
                 <h2>
                     <a href="">
-                        Peaky Blinders
+                        {props.title}
                     </a>
                 </h2>
                 <p>
-                    12-09-2021
+                    {props.date}
                 </p>
             </div>
         </div>

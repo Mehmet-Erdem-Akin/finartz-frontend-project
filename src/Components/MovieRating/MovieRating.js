@@ -2,8 +2,8 @@ import React from "react";
 import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-export default function MovieRating() {
-  const percentage = 66;
+export default function MovieRating(props) {
+  const percentage = props.rating;
 
   return (
     <div>
@@ -22,7 +22,7 @@ export default function MovieRating() {
         })}
       >
          <div style={{ fontSize: '14px', color: '#fff',marginLeft: '-5px' }}>
-          <strong>67</strong> 
+          <strong>{percentage}</strong> 
           <span style={{fontSize: '6px',top: '12px', position: 'absolute',color: '#ccc'}}>%</span>
         </div> 
       </CircularProgressbarWithChildren>
