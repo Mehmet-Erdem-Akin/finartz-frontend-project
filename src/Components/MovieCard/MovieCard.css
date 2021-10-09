@@ -9,7 +9,18 @@
     left: 10px;
     font-weight: bold;
 }
+.card-feature {
 
+   display: flex;
+   flex-direction: row;
+}
+.thumbs {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: -50px;
+    top: -15px;
+}
 .image:hover {
     cursor: pointer;
 }

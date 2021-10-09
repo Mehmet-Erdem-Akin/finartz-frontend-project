@@ -1,0 +1,9 @@
+.thumbs-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.thumb-item {
+    margin: 0px 2px;
+    cursor: pointer;
+}
