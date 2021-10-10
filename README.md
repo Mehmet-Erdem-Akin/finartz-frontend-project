@@ -1,5 +1,7 @@
 # Finartz Frontend Development Project
 
+- [DEMO](https://finartz-frontend-project.herokuapp.com/)
+
 ### Desktop Görünüm:
 <img width="1400"  src="https://github.com/Mehmet-Erdem-Akin/finartz-frontend-project/blob/master/src/Assets/Img/finartz-desktop.png?raw=true">
 
@@ -7,7 +9,7 @@
 <img width="auto" height="450" src="https://github.com/Mehmet-Erdem-Akin/finartz-frontend-project/blob/master/src/Assets/Img/finartz-mobile.png?raw=true">
 
 ## Proje Yapısı ve Özellikleri
-Projede, öncelikle dosya yapısını ve oluşturacağım componentleri hazırladım. Ardından sayfa/component tasarımlarını kodladım. Tasarımı kodlarken bazı element özelliklerini öğrenmek için https://www.themoviedb.org/ da inspect yöntemini kullandım. Ardından axios kullanarak verileri çektim. Daha sonra githubda bulup incelediğim paketleri projede kullandım. axios ve lazy load kullanırken sık sık network'ü dinledim. Proje üzerinde çalışırken react hook yapılarını da kullandım. Projede değişiklik yaptıkça github'a pushladım.
+Projede, öncelikle dosya yapısını ve oluşturacağım componentleri hazırladım. Ardından sayfa/component tasarımlarını kodladım. Tasarımı kodlarken bazı element özelliklerini öğrenmek için https://www.themoviedb.org/ da inspect yöntemini kullandım. Ardından axios kullanarak verileri çektim. Daha sonra github da bulup incelediğim paketleri projede kullandım. axios ve lazy load kullanırken sık sık network'ü dinledim. Proje üzerinde çalışırken react hook yapılarını da kullandım. Projede değişiklik yaptıkça github'a pushladım.
 
 Unit test ve Docker hakkında yeterli teknik bilgim olmadığı için bunları projede kullanamadım. 
 
