@@ -20,7 +20,7 @@ export default function PopularMoviesSection() {
   const [link, setLink] = useState(defaultLink);
   const [selected, setSelected] = useState('onStream');
   const [movieList, setMovieList] = useState([])
-
+  
   const handleClick = (text) => {
     setLink(links[text]);
     setSelected(text);

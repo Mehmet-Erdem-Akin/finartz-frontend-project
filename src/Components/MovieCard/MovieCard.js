@@ -24,7 +24,11 @@ export default function MovieCard(props) {
         ></img>
         <div className="card-feature">
           <div className="movie-rating">
-            <MovieRating rating={props.rating} />
+            <MovieRating
+             rating={props.rating}
+             trailColor={(props.rating >= 70) === true && '#204529' || (props.rating < 70 && props.rating >= 40) === true && '#3B3910' || (props.rating < 40) === true && '#571435' }
+             pathColor={(props.rating >= 70) === true && '#21d07a' || (props.rating < 70 && props.rating >= 40) === true && '#D2D531' || (props.rating < 40) === true && '#DB2360' }
+             />
           </div>
           <div className="thumbs">
             <ThumbsBar />

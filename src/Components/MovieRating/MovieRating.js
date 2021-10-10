@@ -16,9 +16,9 @@ export default function MovieRating(props) {
           textSize: "2em",
           
           // Colors
-          textColor: "#ffffff",
-          trailColor: "#204529",
-          pathColor: "#21d07a",
+          textColor: '#ffffff',
+          trailColor: props.trailColor,
+          pathColor: props.pathColor,
         })}
       >
          <div style={{ fontSize: '14px', color: '#fff',marginLeft: '-5px' }}>
