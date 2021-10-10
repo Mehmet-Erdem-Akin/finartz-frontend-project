@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./PopularFilterBar.css";
+import Dropdown from "../Dropdown/Dropdown";
+import MediaQuery from 'react-responsive'
 
 export default function PopularFilterBar({ handleClick, selected }) {
-  
 
   const selectedFilterBtn = {
     "background-color": "#032541",
@@ -15,8 +16,22 @@ export default function PopularFilterBar({ handleClick, selected }) {
 
   return (
     <div className="FilterBar">
-      <h2 className="filter-title">Popüler Olanlar</h2>
-      
+      <h2 className="filter-title">Popüler Olanlar</h2>{console.log(window.screen)}
+      <MediaQuery maxWidth={767}>
+        <Dropdown 
+        itemAmount="4"
+        one="Yayın Akışı"
+        two="Televizyonda"
+        three="Kiralık"
+        four="Sinemalarda"
+        onClickOne={ () => handleClick("onStream")}
+        onClickTwo={ () => handleClick("onTv")}
+        onClickThree={ () => handleClick("onForRent")}
+        onClickFour={ () => handleClick("onCinema")}
+        selected={selected}
+      />
+      </MediaQuery>
+      <MediaQuery minWidth={768}>
         <div className="bar">
           <div
             className="filter"
@@ -67,6 +82,9 @@ export default function PopularFilterBar({ handleClick, selected }) {
             </h3>
           </div>
         </div>
+      </MediaQuery>
+        
+        
       
     </div>
   );
