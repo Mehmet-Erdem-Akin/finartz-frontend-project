@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Finartz Frontend Development Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Desktop Görünüm:
+<img width="1400"  src="https://github.com/Mehmet-Erdem-Akin/finartz-frontend-project/blob/master/src/Assets/Img/finartz-desktop.png?raw=true">
 
-## Available Scripts
+### Mobil Görünüm:
+<img width="1400"  src="https://github.com/Mehmet-Erdem-Akin/finartz-frontend-project/blob/master/src/Assets/Img/finartz-mobile.png?raw=true">
 
-In the project directory, you can run:
+## Proje Yapısı ve Özellikleri
+Projede, öncelikle dosya yapısını ve oluşturacağım componentleri hazırladım. Ardından sayfa/component tasarımlarını kodladım. Tasarımı kodlarken bazı element özelliklerini öğrenmek için https://www.themoviedb.org/ da inspect yöntemini kullandım. Ardından axios kullanarak verileri çektim. Daha sonra githubda bulup incelediğim lazy load kütüphanesini projede kullandım. axios ve lazy load kullanırken sık sık network'ü dinledim. Proje üzerinde çalışırken react hook yapılarını da kullandım. Projede değişiklik yaptıkça github'a pushladım.
 
-### `yarn start`
+### Özellikler
+1) Kullanıcı slider veya tab üzerinde geçiş yaptığında lazy load şeklinde görüntülenme sağlanmaktadır. <br>
+2) Her bir filmin score göstergesinde score'a göre renklendirme yaptım. score >= 70 ise yeşil, score < 70 ve score >= 40 ise sarı, score < 40 ise kırmızı renklendirme gerçkeleştiriyorum. <br>
+3) Poster üzerinde thumbs up ve thumbs down iconları bulunmaktadır. Eğer kullanıcı iconlardan birine tıklarsa ekranda sadece tıkladığı icon gösterilir. Aynı icona tekrar tıklarsa 2 icon da tekrar görünebilir olmaktadır. <br>
+4) Projede topla 9 component bulunmaktadır <br>
+5) Projede mobil uyumlu olacak şekilde çalışılmıştır.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## NPM Paketleri
+1) React <br>
+2) Axios <br>
+3) react-circular-progressbar <br>
+    Filmlerin score göstergesini oluşturmak için bu paketi kullandım ve tasarıma göre özelleştirdim. 
+4) react-lazy-load-image-component <br>
+    Slider kaydırıldığında veya tab değiştirildiğinde lazy load uygulamak için bu paketi kullandım. Birkaç paket denedim fakat en düzgün çalışan bu oldu. 
+5) react-responsive <br>
+    Filter barı desktop görünümünde filter bar, mobil görünümde ise dropdown component olacak şekilde kodladım. Fakat hangi görünümde olduğumu anlayabilmek için bu paketin içinde bulunan MediaQuery componentini kullandım. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Nasıl Çalışır?
+**1) Projede bulunan paketleri yüklemek İçin** : `npm install` <br />
+**2) Projeyi ÇAlıştırmak İçin** : `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
