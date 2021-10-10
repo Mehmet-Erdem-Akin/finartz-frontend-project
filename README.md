@@ -9,11 +9,13 @@
 ## Proje Yapısı ve Özellikleri
 Projede, öncelikle dosya yapısını ve oluşturacağım componentleri hazırladım. Ardından sayfa/component tasarımlarını kodladım. Tasarımı kodlarken bazı element özelliklerini öğrenmek için https://www.themoviedb.org/ da inspect yöntemini kullandım. Ardından axios kullanarak verileri çektim. Daha sonra githubda bulup incelediğim paketleri projede kullandım. axios ve lazy load kullanırken sık sık network'ü dinledim. Proje üzerinde çalışırken react hook yapılarını da kullandım. Projede değişiklik yaptıkça github'a pushladım.
 
+Unit test ve Docker hakkında yeterli teknik bilgim olmadığı için bunları projede kullanamadım. 
+
 ### Özellikler
 1) Kullanıcı slider veya tab üzerinde geçiş yaptığında lazy load şeklinde görüntülenme sağlanmaktadır. <br>
 2) Her bir filmin score göstergesinde score'a göre renklendirme yaptım. score >= 70 ise yeşil, score < 70 ve score >= 40 ise sarı, score < 40 ise kırmızı renklendirme gerçkeleştiriyorum. <br>
 3) Poster üzerinde thumbs up ve thumbs down iconları bulunmaktadır. Eğer kullanıcı iconlardan birine tıklarsa ekranda sadece tıkladığı icon gösterilir. Aynı icona tekrar tıklarsa 2 icon da tekrar görünebilir olmaktadır. <br>
-4) Projede topla 9 component bulunmaktadır <br>
+4) Projede toplam 9 component bulunmaktadır <br>
 5) Projede mobil uyumlu olacak şekilde çalışılmıştır.
 
 
@@ -31,6 +33,6 @@ Projede, öncelikle dosya yapısını ve oluşturacağım componentleri hazırla
 
 ## Nasıl Çalışır?
 **1) Projede bulunan paketleri yüklemek İçin** : `npm install` <br />
-**2) Projeyi ÇAlıştırmak İçin** : `npm start`
+**2) Projeyi Çalıştırmak İçin** : `npm start`
 
 
