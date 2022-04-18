@@ -1,4 +1,4 @@
-# Finartz Frontend Development Project
+# TMDB Movie Project
 
 - [DEMO](https://finartz-frontend-project.herokuapp.com/)
 
