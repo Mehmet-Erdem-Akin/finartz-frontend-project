@@ -1,6 +1,6 @@
 # TMDB Movie Project
 
-- [DEMO](https://finartz-frontend-project.herokuapp.com/)
+- [DEMO](https://tmdb-movie-project.onrender.com/)
 
 ### Desktop Görünüm:
 <img width="1400"  src="https://github.com/Mehmet-Erdem-Akin/finartz-frontend-project/blob/master/src/Assets/Img/finartz-desktop.png?raw=true">
